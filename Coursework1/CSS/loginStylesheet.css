@@ -1,0 +1,103 @@
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background: url(../images/abstract-1869447_1280.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.loginStat {
+
+
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    transform: translate(-20%,-40%);
+    color: black;
+    width: 280px;
+
+}
+
+.loginStat h1 {
+
+    color: #837;
+    float: left;
+    font-size: 40px;
+    border-bottom: 4px solid #555;
+    margin-bottom: 50px;
+    padding: 10px 0;
+
+}
+
+.field {
+
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 8px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #aaa;
+
+}
+
+.field input {
+
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 80px;
+    float: left;
+    margin: 3px;
+
+}
+
+.btnSbmt {
+
+    width: 100%;
+    background: none;
+    border: 2px solid #636;
+    color: white;
+    padding: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+}
+
+.loginStat2 {
+
+
+    position: absolute;
+    top: 18%;
+    left: 60%;
+    transform: translate(-20%,-40%);
+    color: black;
+    width: 280px;
+
+}
+
+.loginStat2 h1 {
+
+    color: #837;
+    float: left;
+    font-size: 40px;
+    border-bottom: 4px solid #555;
+    margin-bottom: 50px;
+    padding: 10px 0;
+
+}
+
+.btnSbmt:hover {
+
+    border-color: green;
+    border-radius:  20px;
+    color: green;
+
+}

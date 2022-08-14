@@ -1,0 +1,217 @@
+.mainContainer {
+
+    align-items: flex-start;
+    display: flex;
+    position: -webstick-sticky;
+    position:sticky;
+    top: 10px;
+    height: 614px;
+    width: 1250px;
+/*The whole main container is smaller than the display res. 1280 x 720
+because the parts of the browser take some space*/
+}
+
+.bigRectangleLeft {
+
+    align-content: flex-start;
+    align-items: stretch;
+    border: 1px;
+    border-color: #aaa;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    height: 614px;
+    width: 185px;
+
+}
+
+.bigRectangleRight {
+
+    align-content: flex-start;
+    align-items: stretch;
+    border: 1px;
+    border-color: #aaa;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    height: 614px;
+    width: 305px;
+
+}
+
+.infoTableLeft {
+
+    align-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 185px;
+
+}
+
+.infoTableLeft img {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.infoSubTableLeft {
+
+    align-content:flex-start;
+    align-items: stretch;
+    display: inline-block;
+    position: relative;
+    height: 534px;
+    width: 185px;
+    background: url(../images/pink-black-and-yellow-abstract-painting-2911521.jpg) no-repeat;
+    background-size: cover;
+    margin: none;
+
+}
+
+.logout {
+
+    align-content:flex-start;
+    align-items: stretch;
+    display: inline-block;
+    position: relative;
+    height: 260px;
+    width: 185px;
+
+
+}
+
+.logout img {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+.logout .LOG-OUT {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: none;
+  color: black;
+  font-size: 20px;
+  padding: 35px 10px;  /*apparently given the res. these are the only
+  measurements to make the button a circle*/
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.logout .LOG-OUT:hover {
+  background-color: #F21516;
+  color: white;
+}
+
+.infoTableRight {
+
+    align-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 305px;
+
+}
+
+.infoTableRight img {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.infoSubTableRight {
+
+    align-content:flex-start;
+    align-items: stretch;
+    border: 1px;
+    border-color: #aaa;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    height: 534px;
+    width: 305px;
+    background: url(../images/pink-black-and-yellow-abstract-painting-2911521.jpg) no-repeat;
+    background-size: cover;
+    margin: none;
+
+
+}
+
+.centralSquare {
+
+    align-content: flex-start;
+    align-items: stretch;
+    border: 1px;
+    border-color: #aaa;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    height: 614px;
+    width: 760px;
+
+}
+
+.topLayerLogo {
+
+    align-content: flex-start;
+    align-items: stretch;
+    border-bottom: 1px;
+    border-color: #aaa;
+    border-style: solid;
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 757px;
+
+}
+
+.topLayerLogo img {
+  position: relative;
+
+
+}
+
+.mainPageTable {
+    margin: none;
+    align-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    position: relative;
+    height: 534px;
+    width: 760px;
+    background: url(../images/pink-black-and-yellow-abstract-painting-2911521.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+ .buttonSubLeft {
+
+    width: 100%;
+    height: 20px;
+    border: 1px solid #4CAF50;
+    display: block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.buttonSubLeft:hover {
+
+    background-color: black;
+    color: white;
+
+}

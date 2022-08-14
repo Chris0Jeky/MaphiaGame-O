@@ -1,0 +1,237 @@
+.maincontainer {
+    background: url(../images/war-2721538_1280.jpg) no-repeat;
+    background-size:cover;
+    margin: none;
+    align-content: flex-start;
+    align-items: stretch;
+    display: inline-block;
+    position: relative;
+    height: 514px;
+    width: 734px;
+
+}
+
+.upperContainer {
+
+  align-content: flex-start;
+  align-items: stretch;
+  display: block;
+  position: relative;
+  height: 200px;
+  width: 734px;
+
+}
+
+
+  .dropbtn {
+
+    background: none;
+    border: 2px solid #888;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    width: 100px;
+
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+/*on hover and after click the button becomes slightly smaller because of the absence of a border and it will be black*/
+    background-color: black;
+    border: none;
+
+  }
+
+  .dropbtn2 {
+
+    background: none;
+    border: 2px solid #888;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    width: 100px;
+
+  }
+
+  .dropbtn2:hover, .dropbtn2:focus {
+
+    background-color: black;
+    border: none;
+
+  }
+
+  .dropbtn3 {
+
+    background: none;
+    border: 2px solid #888;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    width: 100px;
+
+  }
+
+  .dropbtn3:hover, .dropbtn3:focus {
+
+    background-color: black;
+    border: none;
+
+  }
+
+  .play {
+
+    background: none;
+    border: 2px solid #888;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    width: 100px;
+
+  }
+/*On hover the PLAY button becomes red and hard to ignore*/
+  .play:hover {
+
+    background-color: red;
+    color: black;
+    font-size: 26px;
+    border: none;
+
+  }
+
+
+  .dropdown-content {
+
+
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+  }
+
+  .dropdown-content a {
+
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+  .dropdown-content2 {
+
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+  }
+
+  .dropdown-content2 a {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+  .dropdown-content3 {
+
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+  }
+
+  .dropdown-content3 a {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+  .dropdownMafia {
+
+    position: absolute;
+    top: 10%;
+    left: 3%;
+
+  }
+
+  .dropdownMafia a:hover {
+
+    background-color: #ddd;
+
+  }
+
+/*if absolute is not used, the position will probably change on click and it migt lead to minor bugs*/
+  .dropdownDifficulty {
+
+    position: absolute;
+    top: 10%;
+    right: 20%;
+
+  }
+
+  .dropdownDifficulty a:hover {
+
+    background-color: #ddd;
+
+  }
+
+  .dropdownGift {
+
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+
+  }
+
+  .dropdownGift a:hover {
+
+    background-color: #ddd;
+
+  }
+
+  .playButton {
+
+    position: absolute;
+    top: 25%;
+    right: 20%;
+
+  }
+
+  .show {
+
+    display: block;
+
+  }

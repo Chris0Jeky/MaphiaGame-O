@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ndragheta</title>
+    <style>
+      .selectButton {
+
+        position: absolute;
+        top: 25%;
+        right: 20%;
+
+      }
+
+      .Select {
+
+        background: none;
+        border: 2px solid #888;
+        color: #345;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 10px 0;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        width: 100px;
+
+      }
+
+      .Select:hover {
+
+        background-color: red;
+        color: #ccc;
+        font-size: 26px;
+        border: none;
+
+      }
+
+      .infoMaf {
+
+        background-color: #eeddcc;
+        color: black;
+        border: 2px solid #888;
+
+      }
+
+      .infoMaf1 {
+
+        background-color: #eeddcc;
+        color: black;
+        border: 1px solid #555;
+        width: 40%;
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <script src="../javascript/game_manager.js">
+    </script>
+    <div class="infoMaf">
+      <div class="infoMaf1">
+        <h3>Mafia name: </h3>
+      </div>
+      <div class="infoMaf1">
+        <h4>Number of crooks: </h4>
+      </div>
+      <div class="infoMaf1">
+        <h4>Rank of crooks: </h4>
+      </div>
+      <div class="infoMaf1">
+        <h4>Cash: </h4>
+      </div>
+      <div class="infoMaf1">
+        <h4>Controlled territory: </h4>
+      </div>
+    </div>
+    <div class="selectButton">
+        <button type="button" class="Select">Select</button>
+      <!--This button sets the current mafia as Player-->
+    </div>
+  </body>
+</html>

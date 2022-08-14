@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <style>
+    .outerContainer {
+
+        background: url(../images/marble-surface-wall-white-1323712.jpg) no-repeat;
+        background-size: cover;
+        display: inline-block;
+        position: relative;
+        align-content:flex-start;
+        align-items: stretch;
+        width: 100%;
+        border: 2px solid #888;
+
+    }
+
+    .optionsAndInfo {
+
+      display: inline-block;
+      position: relative;
+      width: 62%;
+      border: 2px solid #888;
+      margin: 1px;
+      font-size: 12px;
+
+    }
+
+    .infoMafias {
+
+      display: inline-block;
+      position: relative;
+      align-content:flex-start;
+      align-items: stretch;
+      width: 35%;
+      font-size: 15px;
+      border: 2px solid #888;
+
+    }
+
+    .infoMenu {
+
+      display: inline-flex;
+      position: relative;
+      align-content:flex-start;
+      align-items: stretch;
+      width: 98.3%;
+      border: 2px solid #888;
+      margin: 1px;
+
+    }
+
+    .name {
+
+      background-color: #dcb;
+      position: relative;
+      align-content:flex-start;
+      align-items: stretch;
+      width: 140px;
+      height: 19px;
+      border: 2px solid #888;
+      margin: 5px;
+
+    }
+
+    .name:hover {
+
+      background-color: red;
+      color: #ccc;
+      font-size: 20px;
+      border: none;
+
+    }
+
+    .numofcrooks {
+
+      background-color: #dcb;
+      position: relative;
+      align-content:flex-start;
+      align-items: stretch;
+      width: 140px;
+      height: 19px;
+      border: 2px solid #888;
+      margin: 5px;
+
+    }
+
+    .numofcrooks:hover {
+
+      background-color: red;
+      color: #ccc;
+      font-size: 20px;
+      border: none;
+
+    }
+
+    .crooksrank {
+
+      background-color: #dcb;
+      position: relative;
+      align-content:flex-start;
+      align-items: stretch;
+      width: 140px;
+      height: 19px;
+      border: 2px solid #888;
+      margin: 5px;
+
+    }
+
+    .crooksrank:hover {
+
+      background-color: red;
+      color: #ccc;
+      font-size: 20px;
+      border: none;
+
+    }
+
+    .cash {
+
+      background-color: #dcb;
+      position: relative;
+      align-content:flex-start;
+      align-items: stretch;
+      width: 140px;
+      height: 19px;
+      border: 2px solid #888;
+      margin: 5px;
+
+    }
+
+    .cash:hover {
+
+      background-color: red;
+      color: #ccc;
+      font-size: 20px;
+      border: none;
+
+    }
+
+    .territory {
+
+      background-color: #dcb;
+      position: relative;
+      align-content:flex-start;
+      align-items: stretch;
+      width: 140px;
+      height: 19px;
+      border: 2px solid #888;
+      margin: 5px;
+
+    }
+
+    .territory:hover {
+
+      background-color: red;
+      color: #ccc;
+      font-size: 20px;
+      border: none;
+
+    }
+
+    .picciottiAttack {
+
+      display:block;
+      position: relative;
+      bottom: -23%;
+      left: 10%;
+
+    }
+    .picciottiContainer {
+
+      display:inline-block;
+
+
+    }
+
+    .buttons {
+
+      position: relative;
+      bottom: -57%;
+      left: 0%;
+
+    }
+
+    .button {
+
+      width: 108px;
+
+    }
+
+    .log1 {
+
+      display:inline-block;
+
+    }
+
+  </style>
+  </head>
+  <body>
+    <script src="../javascript/game_mechanics.js">
+    </script>
+
+      <div class="outerContainer">
+        <div class="optionsAndInfo">
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+          <p>F</p>
+        </div>
+        <div class="infoMafias">
+          <p>The current situation: </p>
+          <p id="maf1">F</p>
+          <p id="maf2">F</p>
+          <p id="maf3">F</p>
+          <p id="maf4">F</p>
+          <p id="maf5">F</p>
+          <p id="richest">F</p>
+          <p id="powerful">F</p>
+        </div>
+        <div class="infoMenu">
+          <div class="infoPlayer">
+            <div id="Hname"class="name">
+              Name
+            </div>
+            <div id="Hnum"class="numofcrooks">
+              Num of Crooks
+            </div>
+            <div id="Hrank"class="crooksrank">
+              Rank
+            </div>
+            <div id="Hcash"class="cash">
+              Cash
+            </div>
+            <div id="Hter"class="territory">
+              Territory
+            </div>
+          </div>
+          <div class="picciottiContainer">
+            <form class="" onsubmit="return startThisShoot()"action="game.html" method="post">
+              <div class="picciottiAttack">
+                Insert number of attacking crooks here
+                <input id="picciotti" type="text" name="" value="" placeholder="Number">
+              </div>
+              <div class="buttons">
+                <button onclick="buttonMafia1()" type="submit" class="button" name="button">Ndragheta</button>
+                <button onclick="buttonMafia2()" type="submit" class="button" name="button">Corleone</button>
+                <button onclick="buttonMafia3()" type="submit" class="button" name="button">RossoPomodoro</button>
+                <button onclick="buttonMafia4()" type="submit" class="button" name="button">AvengersInfinite</button>
+                <button onclick="buttonMafia5()" type="submit" class="button" name="button">GameStop</button>
+              </div>
+              <div class="">
+                <br>...And choose one of the mafias to attack <br>
+                If you choose your mafia, you choose to skip the attack
+                <button type="button" onclick="refresh()" name="button">Refresh</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

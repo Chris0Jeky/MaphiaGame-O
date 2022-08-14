@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LoginButtonPage
+    </title>
+    <style>
+
+
+      .mainPageTable {
+
+         align-content: flex-start;
+         align-items: stretch;
+         position: relative;
+         width: 534;
+         max-width: 760px;
+
+       }
+
+       .mainPageTable img {
+
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+       }
+
+       .mainPageTable .LOGIN {
+
+         position: absolute;
+         top: 56%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         background: none;
+         color: white;
+         font-size: 20px;
+         padding: 35px 15px;
+         border: none;
+         cursor: pointer;
+         border-radius: 50%;
+         text-align: center;
+         -webkit-transition-duration: 0.8s;
+         transition-duration: 0.8s;
+
+       }
+
+       .mainPageTable .LOGIN:hover {
+
+         background-color: #420420;
+         color: #5772FF;
+
+  }
+  </style>
+  </head>
+  <body>
+    <div class="mainPageTable">
+      <img src="../images/space-1609029_1280.jpg" alt="Space" style="width:100%">
+      <form class="" action="../php/loginpage.php" method="get">
+        <button type="submit" class="LOGIN">LOG IN</button>
+      </form>
+    </div>
+  </body>
+</html>

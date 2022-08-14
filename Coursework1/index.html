@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>M4PHYA GAME</title>
+    <link rel="stylesheet"
+     type="text/css"
+     href="CSS/stylesheetIndex001.css" /> <!-- calls the main stylesheet file -->
+     <style>
+           .linkImg01{
+
+             position:relative;
+             width: 100%;
+             height: 273px;
+             max-width: 305px;
+             max-height: 534px;
+
+           }
+
+           .linkImg01 img {
+
+             width: 100%;
+             height: 100%;
+
+           }
+
+
+          a:link, a:visited {
+           border: 1px solid #4CAF50;
+           font-size: 26px;
+           color: black;
+           text-align: center;
+           text-decoration:none;
+           display: inline-block;
+           width: 100%;
+           height: 50px;
+           -webkit-transition-duration: 0.4s;
+           transition-duration: 0.4s;
+         }
+
+          a:hover, a:active {
+           background-color: black;
+           color: white;
+         }
+
+
+ </style>  <!-- this css part is used to make the links on the left look like buttons
+                and it makes them merge with the underneath picture -->
+  </head>
+
+  <script>
+    var logggout = function() {
+
+      var presentUserString = localStorage.getItem("loggedUser");
+      var presentUser = JSON.parse(presentUserString);
+      var originalUserSring = localStorage.getItem(presentUser.username0);
+      var originalUser = JSON.parse(originalUserSring);
+
+      var loggedIn = {
+          username0: presentUser.username0,
+          password0: presentUser.password0,
+          score: 0,
+          mafia: 0,
+          gift: 0,
+          difficulty: 0
+      };
+      loggedInString = JSON.stringify(loggedIn);
+
+      localStorage.setItem("loggedUser", loggedInString);
+
+    }
+  </script>
+  <body>
+
+    <div class="mainContainer">     <!--The following DIVs are the ones that set the whole webpage as you see it -->
+      <div class="bigRectangleLeft">
+        <div class="infoTableLeft">
+          <img src="images/PicsArt_11-06-10.08.51.png" alt="">
+        </div>
+
+        <div class="infoSubTableLeft">
+          <div class="linkImg01">
+
+          <a href="HTML/leaderboard.html" id="link01" target="iFrame01">
+            Leaderboard
+          </a>
+          <a href="HTML/rules.html" id="link02" target="iFrame01">
+            Rules
+          </a>
+          <a href="HTML/mafiaInfo.html" id="link03" target="iFrame01">
+            Mafia Info
+          </a>
+          <a href="HTML/description.html" id="link04" target="iFrame01">
+            Description
+          </a>
+          <a href="HTML/generalInfo.html" id="link05" target="iFrame01">
+            Introduction
+          </a>
+
+          </div>
+          <div class="logout">
+            <img src="images/background-3301487_1280.jpg" alt="">
+            <form class="" onsubmit="logggout()" action="HTML/loginbutton.html" method="get" target="iFrame02">
+              <button type="submit" class="LOG-OUT">LOG OUT</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="centralSquare">
+        <div class="topLayerLogo">
+          <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="mainPageTable">
+          <iframe height="100%"
+           width="100%"
+            src="HTML/loginbutton.html"
+            name="iFrame02">            <!--This iFrame will be the one that hosts many important
+                                            sub-pages such LOGIN and the Game itself -->
+            </iframe>
+        </div>
+      </div>
+
+
+
+      <div class="bigRectangleRight">
+        <div class="infoTableRight">
+          <img src="images/PicsArt_11-06-10.17.20.png" alt="">
+        </div>
+
+        <div class="infoSubTableRight">
+          <iframe height="100%"
+           width="100%"
+            src="HTML/generalInfo.html"
+            name="iFrame01">              <!--This iFrame is the display of the NavBar -->
+            </iframe>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

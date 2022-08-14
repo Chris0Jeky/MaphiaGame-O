@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Settings Page</title>
+<link rel="stylesheet" href="../CSS/settingsStylesheet.css">
+    </style>
+  </head>
+  <body>
+    <script src="../javascript/game_manager.js">
+    </script>
+    <div class="maincontainer">
+      <div class="upperContainer">
+       <div class="dropdownMafia">
+          <button onclick="dropdownFunction()" class="dropbtn">Mafia</button>
+          <div id="dropdown01" class="dropdown-content">
+            <a id="maf1" href="dynamicValuesNdragheta.html" target="iFrameInfo">Ndragheta</a>
+            <a id="maf2" href="dynamicValuesCorleone.html" target="iFrameInfo">Corleone</a>
+            <a id="maf3" href="dynamicValuesRossoPomodoro.html" target="iFrameInfo">RossoPomodoro</a>
+            <a id="maf4" href="dynamicValuesAvengersInfinite.html" target="iFrameInfo">AvengersInfinite</a>
+            <a id="maf5" href="dynamicValuesGameStop.html" target="iFrameInfo">GameStop</a>
+            <!--Thanks to these drop down menus the player will be able to customize their experience, selecting their favorite options-->
+            <!--The dropdown menu that appears under the button can change the lower iFrame to show additional data on the selected option -->
+          </div>
+         </div>
+
+         <div class="dropdownDifficulty">
+            <button onclick="dropdownFunction2()" class="dropbtn2">Difficulty</button>
+            <div id="dropdown02" class="dropdown-content2">
+              <a id="diff1" href="dynamicValuesDifficulty1.html" target="iFrameInfo">Normal</a>
+              <a id="diff2" href="dynamicValuesDifficulty2.html" target="iFrameInfo">Hardcore</a>
+            </div>
+         </div>
+
+         <div class="dropdownGift">
+            <button onclick="dropdownFunction3()" class="dropbtn3">Gift</button>
+            <div id="dropdown03" class="dropdown-content3">
+              <a id="gif1" href="dynamicValuesGift1.html" target="iFrameInfo">Judge</a>
+              <a id="gif2" href="dynamicValuesGift2.html" target="iFrameInfo">Honore</a>
+              <a id="gif3" href="dynamicValuesGift3.html" target="iFrameInfo">Sangue</a>
+            </div>
+           </div>
+       </div>
+
+       <div class="playButton">
+         <form  onsubmit="return chosenOptionsValidator()" action="game.html" method="post">
+           <button type="submit" class="play">START</button>
+         </form>
+         <!--This button brings the player to the Game frame changing the central iFrame-->
+       </div>
+
+       <div class="bottomIframeContainer">
+         <iframe name="iFrameInfo" src="mafiaplaceholder.html"
+          width="100%" height=310px></iframe>
+       </div>
+      </div>
+      <script>
+/* The following JS function makes the drop down  menu, of the ID of the DIV that contains the options, appear */
+      function dropdownFunction() {
+        document.getElementById("dropdown01").classList.toggle("show");
+      }
+
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {  /* the for loop multiplies the drop down menu by the number of its links*/
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      function dropdownFunction2() {
+        document.getElementById("dropdown02").classList.toggle("show");
+      }
+
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn2')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content2");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+
+      function dropdownFunction3() {
+        document.getElementById("dropdown03").classList.toggle("show");
+      }
+
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn3')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content3");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </body>
+</html>

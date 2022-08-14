@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>leaderboard</title>
+    <style>
+      .leaderboardPage {
+
+        align-content:flex-start;
+        align-items: stretch;
+        border: 1px;
+        border-color: #aaa;
+        border-style: solid;
+        display: inline-block;
+        position: relative;
+        height: 534px;
+        width: 305;
+        background: url(../images/gray-and-black-marble-slab-1451474.jpg) no-repeat;
+        background-size: cover;
+
+      }
+
+      .table {
+
+        border-radius: 2px;
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+
+      }
+
+      .td, .th {
+
+        border: 1px solid #aaa;
+        text-align: left;
+        padding: 6px;
+        font-size: 12;
+        font-family: serif;
+        background: none;
+
+      }
+
+      tr:nth-child(even) {
+
+        background-color: #aaa;
+
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../javascript/game_mechanics.js">
+    </script>
+    <div class="leaderboardPage">
+      <h1>LEADERBOARD</h1>
+
+      <table>
+        <tr>
+          <th id="name1"></th>
+          <th id="score1"></th>
+        </tr>
+        <tr>
+          <td id="name2"></td>
+          <td id="score2"></td>
+        </tr>
+        <tr>
+            <td id="name3"></td>
+          <td id="score3"></td>
+        </tr>
+        <tr>
+          <td id="name4"></td>
+          <td id="score4"></td>
+        </tr>
+        <tr>
+          <td id="name5"></td>
+          <td id="score5"></td>
+
+
+      </table>
+    </div>
+
+  </body>
+</html>
